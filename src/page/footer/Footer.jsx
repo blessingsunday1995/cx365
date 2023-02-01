@@ -6,33 +6,49 @@ import './footer.css'
 const Footer = () => {
   return (
     <footer>
-      <a href="#home" className='footer_logo'>H-Code CLOTHINGS</a>
+    <div className='footer-container'>
+        <div className="cx56text">
+          <h1>CX-365</h1>
+          <a href="#"> <FaFacebookF/></a>
+         <a href="#"><BsTwitter /></a>
+          <a href="#"> <BsInstagram /></a>
+         
+        </div>
 
-     <ul className='permalink'>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-        <li><a href="#service">Service</a></li>
-        <li>  <a href="#gallery">Gallery</a></li>
-<li><a href="#contact">Contact</a></li>
+          <div className="quck-link">
+            <h1>Quick Link</h1>
+             <ul>
+            <li><a href="">Home</a> </li>
+            <li><a href="">How it works</a> </li>
+            <li> <a href="">About Us</a></li>
+            <li><a href="">Get Signed Up </a></li>
+            <li> <a href="">Login</a> </li>
+          </ul>
+          </div>
+
+           <div className="support">
+            <h1>Support</h1>
+             <ul>
+            <li> <a href="">FAQs</a></li>
+            <li> <a href="">Help</a></li>
+            <li> <a href="">Blogs</a></li>
+          </ul>
+          </div>
 
 
-
-
-     </ul>
-
-
-     <div className='footer_socials'>
-        <a href='https://web.facebook.com/blessing.o.sunday' target='blank'><FaFacebookF/></a>
-        <a href='https://www.instagram.com/hc_clothing_001' target='blank'><BsInstagram /></a>
-      <a href='https://twitter.com/BlessingMsunday'  target='blank'><BsTwitter/></a>
-
-      </div>
-
-<div className='footer_copyright'>
-        <small>&copy; 2022 H-Code CLOTHINGS. All rigth reserved</small>
-</div>
+           <div className="connect">
+            <h1>Connect with Us</h1>
+             <ul>
+            <li> <a href="">Facebook</a></li>
+            <li> <a href="">Instagram</a></li>
+            <li> <a href="">Twitter</a></li>
+          </ul>
+          </div>
+         
+    </div>
+    <small>Copyright&copy; 2023 CX-365</small>
       </footer>
   )
-}
+}   
 
 export default Footer

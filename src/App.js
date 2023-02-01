@@ -1,4 +1,5 @@
 import Login from "./page/login/Login";
+import Footer from "./page/footer/Footer";
 
 function App()
 {
@@ -9,7 +10,7 @@ function App()
     <Login/>    
     
 
-    
+    <Footer/>
       </div>
   
   );
