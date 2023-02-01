@@ -208,6 +208,10 @@ background-color: var(--color-white);
 .main-body .rightside .forg {
     text-align: center;
 }
+
+.main-body .rightside .forg a {
+   color: var(--color-primary);
+}
 .main-body .rightside button {
 width: 100%;
     height: 60px;
