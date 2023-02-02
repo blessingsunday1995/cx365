@@ -1,9 +1,45 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import './Login.css'
 import logo from '../../assets/cx3653.png'
 import img1 from '../../assets/pngwing 1.png'
-
+import { useNavigate } from 'react-router-dom'
+import{AuthContext} from '../../helper/AuthContext'
+import axios from 'axios'
 function Login() {
+      const{SetAuthSate} = useContext(AuthContext)
+      // const navigate = useNavigate()
+      const [EmailInput,setemail] = useState("")
+      const [PasswordInput,SetPassword] = useState("")
+      
+
+const login=()=>{
+         const data ={username:EmailInput,password:PasswordInput}
+        axios.post("http://localhost:5000/api/auth/login",data).then((response)=>{
+
+if(response.data.error) {
+  
+  console.log(response.data.error)
+}else{
+
+localStorage.setItem("accessToken", response.data.token)
+SetAuthSate({
+  username:response.data.username,
+  id : response.data.id,
+  status: true,
+
+})
+
+}
+      
+})
+
+
+}
+
+
+
+
+
   return (
     <div className='login-container'>
       <div className='login-header'>
@@ -35,11 +71,18 @@ function Login() {
 
           <div className="rightside">
           <form action="">
+
             <p>Email</p>
-            <input type="email" placeholder='Enter your email address'/>
+            <input type="email" 
+            placeholder='Enter your email address'
+            onChange={(event)=>{setemail(event.target.value)}}
+            />
 
              <p>Password</p>
-            <input type="password" placeholder='Enter your Password'/>
+            <input type="password" 
+            placeholder='Enter your Password'
+            onChange={(event)=>{SetPassword(event.target.value)}}
+            />
           </form>
 
             <div className="forget">
@@ -52,7 +95,7 @@ function Login() {
                 <p>Forgot Password? <a href="#">Reset Password</a> </p>
               </div>
             </div>
-            <button>Login</button>
+            <button onClick={login}>Login</button>
             <p>Don’t have an account? <a href="#">Sign Up</a></p>
           </div>
       </div>
