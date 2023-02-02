@@ -10,25 +10,28 @@ function Login() {
       // const navigate = useNavigate()
       const [EmailInput,setemail] = useState("")
       const [PasswordInput,SetPassword] = useState("")
+       const [errormsg,Seterrormsg] = useState("")
       
 
 const login=()=>{
-         const data ={username:EmailInput,password:PasswordInput}
+         const data ={email:EmailInput,password:PasswordInput}
         axios.post("http://localhost:5000/api/auth/login",data).then((response)=>{
 
 if(response.data.error) {
   
   console.log(response.data.error)
+  Seterrormsg(response.data.error)
 }else{
 
-localStorage.setItem("accessToken", response.data.token)
+localStorage.setItem("accessToken", response.data.accessToken
+)
 SetAuthSate({
   username:response.data.username,
   id : response.data.id,
   status: true,
 
 })
-
+console.log(response.data)
 }
       
 })
@@ -52,10 +55,10 @@ SetAuthSate({
         <nav>
         <img src={logo} alt="" />
         <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>FAQs</li>
-          <li>Contact Us</li>
+          <li> <a href="">Home</a></li>
+          <li> <a href="">About Us</a></li>
+          <li> <a href="">FAQs</a></li>
+          <li><a href="">Contact Us</a></li>
         </ul>
         </nav>
 
@@ -95,8 +98,11 @@ SetAuthSate({
                 <p>Forgot Password? <a href="#">Reset Password</a> </p>
               </div>
             </div>
+              <small>{errormsg}</small>
             <button onClick={login}>Login</button>
             <p>Don’t have an account? <a href="#">Sign Up</a></p>
+
+          
           </div>
       </div>
 
