@@ -2,6 +2,7 @@ import React from 'react'
 import './AboutUs.css'
 import logo from './logo (2).png'
 import cartoon from './cartoon.png'
+import {Link, Route,Routes} from 'react-router-dom'
 function AboutUs() {
   return (
     <div>
@@ -13,14 +14,14 @@ function AboutUs() {
                 <img src={logo} alt="" />
             </li>
             <ul className='nav-2'>
-                <li>Home</li>
+                <li> <Link to='/'>Home</Link></li>
                 <li>About Us</li>
                 <li>FAQs</li>
                 <li>Contact Us</li>
             </ul>
             <ul className='nav-3'>
-                <li>Sign Up</li>
-                <li>Log In</li>
+                <li><Link to='/sign_up'>Sign Up</Link></li>
+                <li><Link to='/'>Log In</Link></li>
             </ul>
         </ul>
         <div className="body-con">

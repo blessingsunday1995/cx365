@@ -57,7 +57,7 @@ console.log(response.data)
         <img src={logo} alt="" />
         <ul>
           <li> <a href="">Home</a></li>
-          <li> <a href="">About Us</a></li>
+          <li> <Link to='/about'>About Us </Link></li>
           <li> <a href="">FAQs</a></li>
           <li><a href="">Contact Us</a></li>
         </ul>
@@ -101,7 +101,7 @@ console.log(response.data)
             </div>
               <small>{errormsg}</small>
             <button onClick={login}>Login</button>
-            <p>Don’t have an account? <Link to='/'>Sign Up</Link></p>
+            <p>Don’t have an account? <Link to='/sign_up'>Sign Up</Link></p>
 
           
           </div>
