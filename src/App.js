@@ -2,6 +2,10 @@ import Login from "./page/login/Login";
 import Footer from "./page/footer/Footer";
 import { useState } from "react";
 import {AuthContext} from './helper/AuthContext'
+import AboutUs from "./page/About Us/AboutUs";
+import CreateAnAccount from "./page/CreateAnAccount/CreateANAccount";
+
+
 
 function App()
 {
@@ -16,10 +20,11 @@ function App()
    
       <div className='App'>
         <AuthContext.Provider value={{AuthState,SetAuthSate}}>
-    <Login/>    
-    
-
+    <Login/> 
+<AboutUs/>
+<CreateAnAccount/>
     <Footer/>
+
 
     </AuthContext.Provider>
       </div>
