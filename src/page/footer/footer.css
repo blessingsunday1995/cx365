@@ -64,6 +64,13 @@ font-family: 'Lexend';
 
 }
 
+footer .footer-container  ul li a {
+   
+    color: var(--color-white);
+  
+
+}
+
 
 
 
