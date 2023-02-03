@@ -7,17 +7,14 @@ import { faBriefcase, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 function CreateANAccount() {
   return (
-    <div>
-      <div className="logo">
-       <img src={logo} alt="cx365 logo" />
-      </div>
-      <div className="contents">
-      <div className="pic">
-               <img src={side} alt="" />
-            </div>
-           <div>
+    <div className='CreateAN'>
+         <img className='sideimg' src={side} alt="" />
+      
+    
+           <div className='content'>
+              <img src={logo} alt="cx365 logo" />
            <div className="welcome">
-        <h2>Welcome to CX365!</h2>
+        <h1>Welcome to CX365</h1>
         <p>create your free account</p>
       </div>
       <form >
@@ -31,14 +28,18 @@ function CreateANAccount() {
 
             </div>
         </label>
+
+
         <label htmlFor="email">
             Email address
             <input type="email" name="email" placeholder='someone@example.com' />
-            {/* <FontAwesomeIcon icon={faEnvelope}
+           <FontAwesomeIcon icon={faEnvelope}
              className='eye'
            
-             /> */}
+             /> 
         </label>
+
+        
         <label htmlFor="password">
             Password
             <div className="password">
@@ -67,10 +68,10 @@ function CreateANAccount() {
              />
           
 
-            {/* <FontAwesomeIcon icon={faBriefcase}
+             <FontAwesomeIcon icon={faBriefcase}
              className='eye'
            
-             /> */}
+             /> 
             </div>
         </label>
         <div className='already'>
@@ -82,7 +83,7 @@ function CreateANAccount() {
       </form>
            </div>
             
-        </div>
+     
 
     </div>
   )

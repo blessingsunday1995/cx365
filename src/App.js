@@ -20,10 +20,10 @@ function App()
    
       <div className='App'>
         <AuthContext.Provider value={{AuthState,SetAuthSate}}>
-    <Login/> 
-<AboutUs/>
+    {/* <Login/>  */}
+{/* <AboutUs/> */}
 <CreateAnAccount/>
-    <Footer/>
+    {/* <Footer/> */}
 
 
     </AuthContext.Provider>
