@@ -2,7 +2,8 @@ import React, { useContext, useState } from 'react'
 import './Login.css'
 import logo from '../../assets/cx3653.png'
 import img1 from '../../assets/pngwing 1.png'
-import { useNavigate } from 'react-router-dom'
+import {Link, Route,Routes} from 'react-router-dom'
+
 import{AuthContext} from '../../helper/AuthContext'
 import axios from 'axios'
 function Login() {
@@ -100,7 +101,7 @@ console.log(response.data)
             </div>
               <small>{errormsg}</small>
             <button onClick={login}>Login</button>
-            <p>Don’t have an account? <a href="#">Sign Up</a></p>
+            <p>Don’t have an account? <Link to='/'>Sign Up</Link></p>
 
           
           </div>

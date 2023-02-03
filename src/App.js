@@ -3,6 +3,7 @@ import Footer from "./page/footer/Footer";
 import { useState } from "react";
 import {AuthContext} from './helper/AuthContext'
 import AboutUs from "./page/About Us/AboutUs";
+import {Link, Route,Routes} from 'react-router-dom'
 import CreateAnAccount from "./page/CreateAnAccount/CreateANAccount";
 
 
@@ -20,11 +21,16 @@ function App()
    
       <div className='App'>
         <AuthContext.Provider value={{AuthState,SetAuthSate}}>
-    {/* <Login/>  */}
 {/* <AboutUs/> */}
-<CreateAnAccount/>
+
     {/* <Footer/> */}
 
+
+       <Routes > 
+  <Route path='/login' element={<Login/>}/>
+   
+     <Route path='/' element={<CreateAnAccount/>}/>
+   </Routes> 
 
     </AuthContext.Provider>
       </div>
