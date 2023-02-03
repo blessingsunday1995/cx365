@@ -21,9 +21,8 @@ function App()
    
       <div className='App'>
         <AuthContext.Provider value={{AuthState,SetAuthSate}}>
-{/*  */}
 
-    {/* <Footer/> */}
+   
 
 
        <Routes > 
@@ -32,7 +31,7 @@ function App()
      <Route path='/sign_up' element={<CreateAnAccount/>}/>
       <Route path='/about' element={<AboutUs/>}/>
    </Routes> 
-
+ { <Footer/> }
     </AuthContext.Provider>
       </div>
   
