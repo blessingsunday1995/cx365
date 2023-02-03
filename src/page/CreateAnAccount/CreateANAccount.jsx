@@ -6,18 +6,20 @@ import * as Yup from 'yup'
 import {resolver, yupResolver} from '@hookform/resolvers/yup'
 import {Link, Route,Routes} from 'react-router-dom'
 import './CreateA.css'
+import {useNavigate} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import axios from 'axios'
 
 function CreateANAccount() {
-  
+   const navigate = useNavigate()
 
    const Schema = Yup.object().shape({
 
         first_name:Yup.string().required(),
         last_name:Yup.string().required(),
         email:Yup.string().email("Email is Invalid").required(),
-        password:Yup.string().min(4).max(10).required(),
+        password:Yup.string().min(4).max(50).required(),
         confirmPassword:Yup.string().oneOf([Yup.ref('password'),null, 'password not match']).required("confirm Password is re")
 
     })
@@ -26,7 +28,18 @@ resolver: yupResolver(Schema)
 
 })
 const onSubmit=(data)=>{
-  console.log(data)
+       axios.post("http://localhost:5000/api/auth/register",data).then((response)=>{
+if(response.data.error) {
+  
+  console.log(response.data.error
+)
+
+}else{
+
+console.log(response.data)
+navigate("/login")
+}
+})
 }
 
   return (
