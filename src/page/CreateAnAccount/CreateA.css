@@ -208,6 +208,11 @@ margin-top: 5px;
      
 
     }
+        .content {
+    
+            padding: 5px;
+    
+        }
         .CreateAN .sideimg {
            display: none;
         }
@@ -217,5 +222,27 @@ margin-top: 5px;
 
 .content img {
 align-self: center;
+}
+
+.content .welcome h1 {
+    width: 409px;
+    height: 51px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 41.8868px;
+    line-height: 51px;
+    margin-bottom: 20px;
+
+}
+
+.names {
+flex-direction: column;
+    gap: 0px;
+}
+
+.names input {
+    width: 250px;
+    height: 60px;
 }
  }
