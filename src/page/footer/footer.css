@@ -146,5 +146,85 @@ font-family: 'Lexend';
 
 
   @media screen and (max-width: 600px) {
+footer {
+       
+        margin-top: 20px;
+        padding: 20px;
+        height: 950px;
+       
+    }
+
+        footer .footer-container {
+            display: flex;
+            flex-direction: column;
+            padding: 0px;
+            margin: 0;
+          height:min-content;
+            
+        }
+footer .footer-container .cx56text {
+margin-top: 0;
+ color: var(--color-white);
+ align-self: center;
+ }
+
+footer .footer-container .cx56text a  {
+    width: 6500px;
+    color: var(--color-white);
+    margin: 10px;
+
+}
+
+footer .footer-container .quck-link h1 {
+    width: 156px;
+    height: 36px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29.124px;
+    line-height: 36px;
+    color: var(--color-white);
+    text-align: justify;
+    margin-bottom: 10px;
+
+}
+
+footer .footer-container .quck-link {
+  
+    margin-bottom: 10px;
+
+}
+
+footer .footer-container .support h1 {
+    width: 156px;
+    height: 36px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29.124px;
+    line-height: 36px;
+    color: var(--color-white);
+    text-align: justify;
+    margin-bottom: 10px;
+
+}
+
+footer .footer-container .support {
+  
+    margin-bottom: 10px;
+
+}
+
+footer .footer-container .connect h1 {
+    
+    margin-bottom: 10px;
+
+}
+
+footer .footer-container .connect  {
+
+    margin-bottom: 10px;
+
+}
 
 } 
