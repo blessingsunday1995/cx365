@@ -150,7 +150,7 @@ footer {
        
         margin-top: 20px;
         padding: 20px;
-        height: 950px;
+        height: 900px;
        
     }
 
@@ -185,7 +185,7 @@ footer .footer-container .quck-link h1 {
     line-height: 36px;
     color: var(--color-white);
     text-align: justify;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
 }
 
@@ -205,7 +205,7 @@ footer .footer-container .support h1 {
     line-height: 36px;
     color: var(--color-white);
     text-align: justify;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
 }
 
@@ -217,7 +217,7 @@ footer .footer-container .support {
 
 footer .footer-container .connect h1 {
     
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
 }
 
@@ -226,5 +226,7 @@ footer .footer-container .connect  {
     margin-bottom: 10px;
 
 }
+
+
 
 } 
