@@ -28,7 +28,7 @@ resolver: yupResolver(Schema)
 
 })
 const onSubmit=(data)=>{
-       axios.post("http://localhost:5000/api/auth/register",data).then((response)=>{
+       axios.post("https://crm-caa0.onrender.com/api/auth/register",data).then((response)=>{
 if(response.data.error) {
   
   console.log(response.data.error

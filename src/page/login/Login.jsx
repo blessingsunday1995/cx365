@@ -16,7 +16,7 @@ function Login() {
 
 const login=()=>{
          const data ={email:EmailInput,password:PasswordInput}
-        axios.post("http://localhost:5000/api/auth/login",data).then((response)=>{
+        axios.post("https://crm-caa0.onrender.com/api/auth/login",data).then((response)=>{
 
 if(response.data.error) {
   
