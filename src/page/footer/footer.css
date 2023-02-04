@@ -145,13 +145,6 @@ font-family: 'Lexend';
 }
 
 
-  /* @media screen and (max-width: 600px) {
-.permalink{
-    flex-direction: column;
-    gap: 1.5rem;
-}
+  @media screen and (max-width: 600px) {
 
-.footer_socials{
-    margin-bottom: 2.6rem;
-}
-}  */
+} 
