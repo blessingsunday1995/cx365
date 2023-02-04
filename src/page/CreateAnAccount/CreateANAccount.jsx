@@ -20,7 +20,7 @@ function CreateANAccount() {
         last_name:Yup.string().required(),
         email:Yup.string().email("Email is Invalid").required(),
         password:Yup.string().min(4).max(50).required(),
-        confirmPassword:Yup.string().oneOf([Yup.ref('password'),null, 'password not match']).required("confirm Password is re")
+        confirmPassword:Yup.string().oneOf([Yup.ref('password'),null, 'password not match']).required("confirm password is required")
 
     })
 const {register,handleSubmit,formState:{errors}} = useForm({
