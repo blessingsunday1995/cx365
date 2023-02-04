@@ -304,5 +304,22 @@ width: 100%;
   .main-body .leftside img {
       width: fit-content;
       height: 347px;
+      margin-top: 30px;
   }
+
+  .main-body .rightside {
+      width: 100%;
+        margin: 0;
+   
+  }
+
+.main-body .rightside .forget {
+   flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.main-body .rightside .forget .remember {
+   margin-bottom: 20px;
+
+}
   }
