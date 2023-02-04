@@ -200,3 +200,22 @@ margin-top: 5px;
     text-align: center;
     
 }
+
+ @media screen and (max-width: 600px) {
+.CreateAN {
+        display: flex;
+        flex-direction: column;
+     
+
+    }
+        .CreateAN .sideimg {
+           display: none;
+        }
+.next input {
+ width: 100%;
+}
+
+.content img {
+align-self: center;
+}
+ }
