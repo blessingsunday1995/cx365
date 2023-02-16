@@ -1,7 +1,7 @@
 .fristpage{
 display: flex;
 width: 100%;
-background-image: url(../../../assets/hero-background.png);
+background-image: url(../../assets/hero-background.png);
 }
 .fristpage .leftside  {
     margin-left: 30px;

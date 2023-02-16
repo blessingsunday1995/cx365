@@ -5,7 +5,7 @@ import {AuthContext} from './helper/AuthContext'
 import AboutUs from "./page/About Us/AboutUs";
 import {Link, Route,Routes} from 'react-router-dom'
 import CreateAnAccount from "./page/CreateAnAccount/CreateANAccount";
-import Navbar from "./components/navber/Navbar"
+import Navbar from "./components/Navbar/Navbar"
 import LandingPage from "./page/LandingPage/LandingPage";
 
 

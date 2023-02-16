@@ -1,8 +1,8 @@
 import React from 'react'
 import './FristPage.css'
-import CX_LOGO from '../../../assets/cx 365.png'
-import Multi from '../../../assets/Multi Customer Relationship Management.png'
-import Service_girl from '../../../assets/customer-service-girl.png'
+import CX_LOGO from '../../assets/cx 365.png'
+import Multi from '../../assets/Multi Customer Relationship Management.png'
+import Service_girl from '../../assets/customer-service-girl.png'
 function FristPage() {
   return (
     <div className='fristpage' >

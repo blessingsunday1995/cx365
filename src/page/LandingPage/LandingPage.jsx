@@ -1,6 +1,6 @@
 import React from 'react'
-import FristPage from '../../components/navber/fristPage/FristPage'
-import Navbar from '../../components/navber/Navbar'
+import FristPage from '../../components/fristPage/FristPage'
+import Navbar from '../../components/Navbar/Navbar'
 
 function LandingPage() {
   return (
