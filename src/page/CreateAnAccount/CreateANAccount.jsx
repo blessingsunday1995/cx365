@@ -115,7 +115,7 @@ navigate("/login")
         </label>
            </div>
         <div className='already'>
-            <h4>Already have an account. <Link to='/'>Login</Link></h4>
+            <h4>Already have an account. <Link to='/login'>Login</Link></h4>
         </div>
         <div className="next">
            <input type="submit" value='Next ' />

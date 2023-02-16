@@ -56,7 +56,7 @@ console.log(response.data)
         <nav>
         <img src={logo} alt="" />
         <ul>
-          <li> <a href="">Home</a></li>
+          <li>  <Link to='/'>Home</Link></li>
           <li> <Link to='/about'>About Us </Link></li>
           <li> <a href="">FAQs</a></li>
           <li><a href="">Contact Us</a></li>

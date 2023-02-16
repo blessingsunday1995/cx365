@@ -21,7 +21,7 @@ function AboutUs() {
             </ul>
             <ul className='nav-3'>
                 <li><Link to='/sign_up'>Sign Up</Link></li>
-                <li><Link to='/'>Log In</Link></li>
+                <li><Link to='/login'>Log In</Link></li>
             </ul>
         </ul>
         <div className="body-con">

@@ -1,0 +1,38 @@
+.fristpage{
+display: flex;
+width: 100%;
+background-image: url(../../../assets/hero-background.png);
+}
+.fristpage .leftside  {
+    margin-left: 30px;
+}
+.fristpage .leftside .logo{
+margin-bottom: 15px;
+}
+
+.fristpage .leftside .multi {
+    margin-bottom: 25px;
+    width: 500px;
+}
+
+.fristpage .leftside h3 {
+    margin-bottom: 25px;
+    width: 370px;
+}
+
+.fristpage .leftside button {
+width: 200px;
+    height: 60px;
+    background: #004581;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+}
+
+
+.fristpage .rightside img {
+    margin-top: 50px;
+  width: 100%;
+  
+    
+}
