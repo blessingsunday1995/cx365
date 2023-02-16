@@ -13,8 +13,8 @@ function Navbar() {
                             <li>  <Link to='/about'>Pages </Link></li>
             </ul>
            <div className='btn'>
-                   <Link className='SignIn' to='/about'>Sign In </Link>
-                    <Link className='SignUp' to='/about'>Sign Up </Link>
+                   <Link className='SignIn' to='/login'>Sign In </Link>
+                    <Link className='SignUp' to='/sign_up'>Sign Up </Link>
            </div>
         </nav>
     </div>
