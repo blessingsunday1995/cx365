@@ -1,6 +1,7 @@
 .crm_help{
     padding: 40px;
   text-align: center;
+    border-bottom: 5px solid var(--color-primary-variant);
 }
 
 .crm_help ul li{
