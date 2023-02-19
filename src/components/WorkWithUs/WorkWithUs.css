@@ -1,8 +1,11 @@
 
 .WorkWithUs{
-  background-image: url(../../assets/why-work-background.png); 
+  background: linear-gradient(270deg, #038BBE 0%, #B5DEF7 130.97%);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+   
   border-bottom: 5px solid var(--color-primary-variant);
   display: flex;
+  width: 100%;
   flex-direction: column;
 }
 
