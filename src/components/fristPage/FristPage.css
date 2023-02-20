@@ -39,3 +39,39 @@ width: 200px;
   
     
 }
+
+@media screen and (max-width: 600px) {
+.fristpage {
+      flex-direction: column;
+      padding: 20px;
+    }
+        .fristpage .leftside {
+            margin-left: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+                .fristpage .leftside .logo {
+                    margin-bottom: 15px;
+                    margin: auto;
+                    width: 200px;
+                    
+            
+                }
+      .fristpage .leftside .multi {
+   margin-bottom: 25px;
+        width: 100%;
+        
+       }
+.fristpage .leftside button {
+  
+ margin: auto;
+ font-size: 25px;
+    
+}
+
+.fristpage .leftside h3 {
+    font-size: 20px;
+}
+}

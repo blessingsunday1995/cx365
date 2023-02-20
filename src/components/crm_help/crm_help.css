@@ -23,3 +23,30 @@ font-family: 'Lexend';
     background: #018ABD;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 600px) {
+.crm_help {
+        padding: 10px;
+       
+    }
+
+        .crm_help ul li {
+            height: 90px;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+            color: var(--color-bg);
+            margin: auto;
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 30px;
+            margin-top: 20px;
+          
+        }
+
+}

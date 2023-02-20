@@ -52,3 +52,21 @@ background: #004581;
         line-height: 22px;
         margin-bottom: 30px;
 }
+
+@media screen and (max-width: 600px) {
+.WorkWithUs .crm {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+    .WorkWithUs h2 {
+  
+      margin: 20px 0;
+      
+  
+    }
+}
